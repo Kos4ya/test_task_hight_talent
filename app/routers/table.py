@@ -1,10 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-import os
-import sys
-from pprint import pprint
 
-# sys.path.append(os.path.join(os.getcwd(), '..'))
 
 from ..schemas.table import Table, TableCreate
 from ..services.table import get_tables, create_table, get_table, delete_table
